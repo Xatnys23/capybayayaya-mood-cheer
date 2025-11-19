@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+    font-family: 'Comic Neue', cursive, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px; /* horizontal padding */
+    box-sizing: border-box;
+}
+
+.section {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff8dc;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section.active {
+    display: block;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    background-color: #ffb347;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc70;
+}
+
+#capybara-img,
+#bye-capybara {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .section {
+        padding: 1.5rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    #capybara-img,
+    #bye-capybara {
+        max-width: 90%;
+    }
+}

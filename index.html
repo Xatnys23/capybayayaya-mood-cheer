@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capybayayaya Mood Cheer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Welcome Section -->
+    <div id="welcome-section" class="section active">
+        <h1>Hi baby! ❤️</h1>
+        <p>How are you today? Would you like me to gauge your mood and cheer you up if needed?</p>
+        <button id="yes-btn">Yes</button>
+        <button id="no-btn">No</button>
+    </div>
+
+    <!-- Mood Selection -->
+    <div id="mood-section" class="section">
+        <h2>How are you feeling today?</h2>
+        <button class="mood-btn" data-mood="mad">😡</button>
+        <button class="mood-btn" data-mood="sad">😢</button>
+        <br>
+        <button class="mood-btn" data-mood="crying">😭</button>
+        <button class="mood-btn" data-mood="happy">😊</button>
+    </div>
+
+    <!-- Capybara Cheer Section -->
+    <div id="capybara-section" class="section">
+        <h2 id="capybara-text"></h2>
+        <img id="capybara-img" src="" alt="Capybara">
+        <div id="capybara-response" style="display:none;">
+            <p id="followup-text"></p>
+            <button id="still-yes">Yes</button>
+            <button id="still-no">No</button>
+        </div>
+    </div>
+
+    <!-- No Need Section -->
+    <div id="no-need-section" class="section">
+        <p>Are you sure you don’t need me by your side?</p>
+        <button id="sure-yes">Yes</button>
+        <button id="sure-no">No, I need you 😢</button>
+    </div>
+
+    <!-- Final Ask Section -->
+    <div id="final-ask-section" class="section">
+        <p>Do you still want me by your side?</p>
+        <button id="final-yes">Yes Please</button>
+        <button id="final-no">No, you did good help, bye 👋</button>
+    </div>
+
+    <!-- Bye Section -->
+    <div id="bye-section" class="section">
+        <h2>Bye bye! 🐾</h2>
+        <p>Hope to see you soon ❤️</p>
+        <img id="bye-capybara" src="clips/capy-bye.gif" alt="Capybara waving"
+            style="width:300px; margin-top:20px; border-radius:10px;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
